@@ -1,0 +1,49 @@
+\section{Strumenti e situazioni in MQ}
+
+\begin{frame}{When density of state function is a good approx to actual discrete energy states?}
+If states are close enough together:
+\begin{align*}
+    &n_0^2=\frac{2mL^2E}{\hbar^2}=\frac{3mL^2kT}{\hbar^2}\tag{Def $n_0$ from thermal energy}\\
+    &\Delta E=\frac{\hbar^2}{2mL^2}(2n_0-1)\approx\frac{h^2n_0}{mL^2}\tag{energy level separation}\\
+    &T_g=\frac{\Delta E}{k}\ll T
+\end{align*}
+\end{frame}
+
+\begin{frame}{Densit\'a stati particle in a box and harmonic oscillator}
+    $g(E)=\TDy{E}{N}$: numero di stati tra $[E,E+dE]$ (vedi anche $g(\vec{k})$)
+\begin{columns}[T]
+ \begin{column}{0.5\textwidth}
+\begin{align*}
+    &E_{1D}=\alpha n^2=\frac{\hbar^2k_n^2}{2m}\\
+    &\rho\,dk=(\Delta n_x)=\frac{L}{2\pi}\,dk\\
+    &g_{1D}(E)=\frac{1}{2\alpha^{1/2}}E^{1/2},\ g(k)=\frac{L}{2\pi}\\
+    &E_{3D}=\alpha n^2=(n_x^2+n_y^2+n_z^2)\alpha\\
+    &N=\frac{\pi N^3}{6}\\
+\end{align*}
+ \end{column}
+ \end{columns}
+ \todo{Modification for ground state  of BE gas in low T limiti: Riedi, thermal physics, sec 10.1}
+\end{frame}
+
+\section{Bosoni}
+
+\subsection{Fotoni}
+
+\begin{frame}{I Fotoni}
+Bosoni con $S=1$ solo traffsverso, non interagiscono tra loro (eqs. di Maxwell sono lineari): gas perfetto
+\end{frame}
+
+\begin{frame}{Corpo nero}
+    Il numero di fotoni in equilibrio con pareti ta temperatura T fluttua attorno a valor medio richiesto da condizione di equilibrio. Statistica di BE con $\mu=0$ (energia interna non muta con T, V fissi, $\mu=\PDy{N}{F}$), la funzione di partizion:
+\begin{align*}
+    &Z(T,V)=\sum_{\{n_r\}}\exp{-\beta\sum_rn_r\epsilon_r}=\sum_{n_1=0}\ldots\sum_{n_j}=\prod_{r=1}^{\infty}\frac{1}{1-\exp{-\beta\epsilon_r}}\\
+    &\exv{n_r}=-\frac{1}{\beta}\PDy{\epsilon_r}{\log{Z}|_{T,V}}=\frac{1}{\beta}\PDof{\epsilon_r}\log{(1-\exp{-\beta\epsilon_r})}=\frac{1}{\exp{\beta\epsilon_r}-1}\\
+    &(\Delta n_r)^2=-\beta\PDy{\epsilon_r}{\exv{n_r}}=\exv{n_r}(1+\exv{n_r})
+\end{align*}
+Conta degli stati con energia con energia $\epsilon$ ($\epsilon=\hbar\omega$, $\epsilon=pc$, $p=2\pi\frac{\hbar}{\lambda}=\hbar\frac{\omega}{c}$):
+\begin{align*}
+    &dn_p=2 V\frac{4\pi}{h^3}p^2\,dp\tag{2 polarization}\\
+    &=\frac{V8\pi}{h^3}(\frac{\hbar\omega}{c})^2\frac{\hbar\,d\omega}{c}=\frac{V}{\pi^2}\frac{\omega^2\,d\omega}{c^3}\\
+    &
+\end{align*}
+\end{frame}
