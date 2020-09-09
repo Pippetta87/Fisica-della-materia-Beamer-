@@ -73,10 +73,13 @@ Conta degli stati con energia con energia $\epsilon$ ($\epsilon=\hbar\omega=pc$,
 \end{frame}
 
 
-\begin{frame}{Ancora pressione e equazione di stato}
+\begin{frame}{Ancora pressione, equazione di stato, legge di Stefan (e considerazioni classiche)}
 \begin{align*}
     &P=\frac{1}{\beta}\PDof{V}\ln{Z(T,V)}=\frac{1}{\beta}\sum_r\PDy{\epsilon_e}{\ln{Z}}\PDy{\epsilon_r}{V}=\frac{1}{\beta}\sum_r(-\beta\exv{n_r})\PDy{\epsilon_r}{V}\\
     &\epsilon_r=\hbar ck=\hbar c\sqrt{n_x^2+n_y^2+n_z^2}\frac{2\pi}{L}\propto V^{-\frac{1}{3}}\Rightarrow\PDy{V}{\epsilon_r}=-\frac{1}{3}\frac{\epsilon_r}{V}\\
-    &P=\frac{1/3}{V}\sum_r\exv{n_r}\epsilon_r=\frac{u(T)}{3}
+    &P=\frac{1/3}{V}\sum_r\exv{n_r}\epsilon_r=\frac{u(T)}{3}\tag{EOS con MQ - EOS MC:}\\
+    &\frac{1}{2}\exv{(E^2+B^2)}=\exv{E^2},\ \exv{|\vecp{E}{B}|}=\exv{E^2}\tag{mean energy density, $P_r=$ momentum flux}\\
+    &\PDy{V}{U}|_T=T\PDy{T}{P}|_V-P=3P=\frac{U}{V}=u(T)=\frac{T}{3}\TDy{T}{u}-\frac{1}{3}u\Rightarrow\frac{du}{u}=4\frac{dT}{T}
  \end{align*}
+ Densit\'a di energia \'e numeric. uguale a $P_r$. Radiazione isotropa in scatola: sovrapposizione incoerente di onde piane - intensit\'a relative delle onde piane dipende solo da T pareti - tutte le onde piane contribuiscono a densit\'a di energia e $\frac{1}{3}$ a $P_r$ sulle pareti della scatola. La costante di prop. tra $u$ e $T^4$ \'e QM. Se il fotone avese massa avrebbe 3 pol. (ci sarebbe fotone longitudinale): $u$ sarebbe modificato di $\frac{3}{2}$ - sperimentalmente o fotone ha massa a riposo zero o il fotone longit. non \'e accoppiato a materia.
 \end{frame}
